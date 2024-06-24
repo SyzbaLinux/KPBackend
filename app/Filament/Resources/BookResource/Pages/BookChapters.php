@@ -34,7 +34,7 @@ class BookChapters extends ManageRelatedRecords
                     ->maxLength(255),
 
                 Forms\Components\RichEditor::make('chapter_meta')
-                    ->he(255),
+                    ,
 
                 Forms\Components\Toggle::make('requires_subscription')
                     ->default(false),
