@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\BookMetaTypeResource\Pages;
 use App\Filament\Resources\BookMetaTypeResource\RelationManagers;
+use App\Filament\Resources\BookResource\RelationManagers\ChaptersRelationManager;
 use App\Models\BookMetaType;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -46,4 +47,6 @@ class BookMetaTypeResource extends Resource
             'edit' => Pages\EditBookMetaType::route('/{record}/edit'),
         ];
     }
+
+
 }

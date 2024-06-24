@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\BookResource\Pages;
+use App\Filament\Resources\BookResource\RelationManagers\ChaptersRelationManager;
 use App\Models\Book;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -74,4 +75,6 @@ class BookResource extends Resource
             Pages\EditBook::class,
         ]);
     }
+
+
 }

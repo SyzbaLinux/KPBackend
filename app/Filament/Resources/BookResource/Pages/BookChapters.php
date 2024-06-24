@@ -56,6 +56,6 @@ class BookChapters extends ManageRelatedRecords
             ->actions([
                 Tables\Actions\EditAction::make()->button(),
                 Tables\Actions\DeleteAction::make()->button(),
-            ]) ;
+            ]);
     }
 }

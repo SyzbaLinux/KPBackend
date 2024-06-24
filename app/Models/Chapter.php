@@ -7,10 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Chapter extends Model
 {
-    use HasFactory;
+
 
     public function chapterPages()
     {
         return $this->hasMany(ChapterPage::class);
+    }
+    public function book()
+    {
+        return $this->belongsTo(Book::class);
     }
 }
