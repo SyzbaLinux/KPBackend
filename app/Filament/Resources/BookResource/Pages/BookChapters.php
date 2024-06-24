@@ -19,7 +19,7 @@ class BookChapters extends ManageRelatedRecords
 
     public static function getNavigationLabel(): string
     {
-        return 'Chapters';
+        return 'Chapter';
     }
 
     public function form(Form $form): Form
@@ -33,13 +33,12 @@ class BookChapters extends ManageRelatedRecords
                 Forms\Components\TextInput::make('sub_title')
                     ->maxLength(255),
 
-                Forms\Components\RichEditor::make('chapter_meta')
-                    ,
+                Forms\Components\RichEditor::make('chapter_meta'),
 
                 Forms\Components\Toggle::make('requires_subscription')
                     ->default(false),
 
-                Forms\Components\TextInput::make('order') ,
+                Forms\Components\TextInput::make('order')->numeric(),
 
             ]);
     }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Chapter;
+use App\Models\ChapterPage;
 use Illuminate\Http\Request;
 
-class ChaptersController extends Controller
+class ChapterPageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class ChaptersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Chapter $chapters)
+    public function show(ChapterPage $chapterPage)
     {
         //
     }
@@ -42,7 +42,7 @@ class ChaptersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Chapter $chapters)
+    public function edit(ChapterPage $chapterPage)
     {
         //
     }
@@ -50,7 +50,7 @@ class ChaptersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Chapter $chapters)
+    public function update(Request $request, ChapterPage $chapterPage)
     {
         //
     }
@@ -58,7 +58,7 @@ class ChaptersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Chapter $chapters)
+    public function destroy(ChapterPage $chapterPage)
     {
         //
     }

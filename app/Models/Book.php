@@ -13,6 +13,6 @@ class Book extends Model
 
     public function chapters()
     {
-        return $this->hasMany(Chapters::class);
+        return $this->hasMany(Chapter::class);
     }
 }
